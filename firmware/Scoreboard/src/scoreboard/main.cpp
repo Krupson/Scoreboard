@@ -7,13 +7,6 @@
 #include <ESPmDNS.h>
 #include <common/scoreboard/scoreboard.h>
 
-#define PIN_T1_ADD        D4
-#define PIN_T1_SUB        D6
-#define PIN_T2_ADD        D3
-#define PIN_T2_SUB        D5
-#define PIN_RESET_SCORE   D8
-#define PIN_SWITCH_SIDES  D9
-
 const char *ssid = WIFI_SSID;
 const char *password = WIFI_PASSWORD;
 

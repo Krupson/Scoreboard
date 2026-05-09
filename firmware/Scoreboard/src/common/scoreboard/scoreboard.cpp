@@ -1,7 +1,5 @@
 #include "scoreboard.h"
 
-#define PIN_DATA D10
-
 static const uint8_t DIGITS[] = {
     0b1110111,
     0b0010001,
