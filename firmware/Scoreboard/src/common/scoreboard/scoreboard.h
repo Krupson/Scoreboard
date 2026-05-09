@@ -1,6 +1,7 @@
 #pragma once
 #include <FastLED.h>
 #include <Preferences.h>
+#include "Config.h"
 
 
 class Scoreboard {
@@ -18,12 +19,6 @@ public:
     void onBrightnessSave();
 
 private:
-    static constexpr uint8_t LEDS_PER_SEGMENT = 4;
-    static constexpr uint8_t LEDS_PER_DIGIT = LEDS_PER_SEGMENT * 7;
-    static constexpr uint8_t NUM_LEDS = LEDS_PER_DIGIT * 4;
-    static constexpr unsigned long MIN_SCORE_CHANGE_TIME_MS = 500;
-    static constexpr unsigned long MIN_BRIGHTNESS_CHANGE_TIME_MS = 20;
-
     struct PersistentViewState {
         uint8_t team1 = 0;
         uint8_t team2 = 0;
